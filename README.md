@@ -6,6 +6,8 @@ automatic music player made with slack api + selenium
 What things you need to install the software and how to install them
 
 ```
+python version 3.8.13
+
 pip install -r requirements.txt
 ```
 
@@ -29,3 +31,10 @@ if "challenge" in slack_event:
 11. 코드의 8번에서 복사한 token에 입력
 12. 코드의 ip와 port 세팅 (사설 IP, 0번에서 진행한 포트로 설정)
 13. 실행
+
+### To - Do
+
+1. consider the introduction of slash commends
+2. unexpected bug detection and response
+3. code refactoring
+4. consider introducing new functions
