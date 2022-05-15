@@ -25,6 +25,7 @@ pip install -r requirements.txt
 ( http://ip:port/slack ) ip는 공인IP, port는 0번에서 진행한 값으로 설정
 
 ** 코드의 아래 주석부분 해제하고 URL 인증받아야 함 **
+
 if "challenge" in slack_event:
     return make_response(slack_event["challenge"], 200, {"content_type": "application/json"})
 
