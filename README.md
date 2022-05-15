@@ -26,8 +26,10 @@ pip install -r requirements.txt
 
 ** 코드의 아래 주석부분 해제하고 URL 인증받아야 함 **
 
+'''
 if "challenge" in slack_event:
     return make_response(slack_event["challenge"], 200, {"content_type": "application/json"})
+'''
 
 11. 코드의 8번에서 복사한 token에 입력
 12. 코드의 ip와 port 세팅 (사설 IP, 0번에서 진행한 포트로 설정)
@@ -39,3 +41,4 @@ if "challenge" in slack_event:
 2. unexpected bug detection and response
 3. code refactoring
 4. consider introducing new functions
+5. require various tests
