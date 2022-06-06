@@ -18,27 +18,21 @@ pip install -r requirements.txt
 5. App Name 설정, 워크스페이스 선택
 6. OAuth & Permissions 탭 이동
 7. Scopes 필요한 scope 추가 
-   ( 현재 추가된 것은 app_mentions:read, channels:join, users:read, chat:write )
-8. Install to Workspace
-9. Bot User OAuth Token 복사
-10. Event Subscriptions 탭 이동 Request URL 입력
-( http://ip:port/slack ) ip는 공인IP, port는 0번에서 진행한 값으로 설정
-
-** 코드의 아래 주석부분 해제하고 URL 인증받아야 함 **
-
-```
-if "challenge" in slack_event:
-    return make_response(slack_event["challenge"], 200, {"content_type": "application/json"})
-```
-
-11. 코드의 8번에서 복사한 token에 입력
-12. 코드의 ip와 port 세팅 (사설 IP, 0번에서 진행한 포트로 설정)
-13. 실행
+   ( 현재 추가된 것은 app_mentions:read, channels:join, users:read, chat:write, incoming-webhook, commands )
+8. slash commends 추가 (neubilityDJ.py에서 @self.app.route("/reset", methods=["POST"]) 에 해당하는 slash 명령어 추가)
+9. Incoming Webhooks On 설정
+10. Interactivity & Shortcuts RequestURL 설정  공인IP/process_button
+11. Install to Workspace
+12. Bot User OAuth Token 복사
+13. Event Subscriptions 탭 이동 Request URL 입력
+( http://ip:port/slack ) ip는 공인IP, port는 1번에서 진행한 값으로 설정
+14. 코드의 8번에서 복사한 token에 입력
+15. 코드의 ip와 port 세팅 (사설 IP, 0번에서 진행한 포트로 설정)
+16. 실행
 
 ### To - Do
 
-1. consider the introduction of slash commends
-2. unexpected bug detection and response
-3. code refactoring
-4. consider introducing new functions
-5. require various tests
+1. 예상하지 못한 버그 발견 및 대응
+2. 여러 명이 있는 환경에서 테스트 필요
+3. manual 업데이트
+4. 기본곡 수정 혹은 추천곡으로 바꿀지?
