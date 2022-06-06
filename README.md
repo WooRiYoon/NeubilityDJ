@@ -20,16 +20,15 @@ pip install -r requirements.txt
 7. Scopes 필요한 scope 추가 
    ( 현재 추가된 것은 app_mentions:read, channels:join, users:read, chat:write, incoming-webhook, commands )
 8. slash commends 추가 (neubilityDJ.py에서 @self.app.route("/reset", methods=["POST"]) 에 해당하는 slash 명령어 추가)
-9. Incoming Webhooks On 설정
-10. Interactivity & Shortcuts RequestURL 설정  공인IP/process_button
-11. Install to Workspace
-12. Bot User OAuth Token 복사
-13. Event Subscriptions 탭 이동 Request URL 입력
+9. Interactivity & Shortcuts RequestURL 설정  공인IP/process_button
+10. Install to Workspace
+11. Bot User OAuth Token 복사
+12. Event Subscriptions 탭 이동 Request URL 입력
 ( http://ip:port/slack ) ip는 공인IP, port는 1번에서 진행한 값으로 설정
-14. 코드의 8번에서 복사한 token에 입력
-15. 코드의 ip와 port 세팅 (사설 IP, 0번에서 진행한 포트로 설정)
-16. 실행
-17. 해당 채널에 봇 초대 @
+13. 코드의 8번에서 복사한 token에 입력
+14. 코드의 ip와 port 세팅 (사설 IP, 0번에서 진행한 포트로 설정)
+15. 실행
+16. 해당 채널에 봇 초대 @
 
 ### To - Do
 
