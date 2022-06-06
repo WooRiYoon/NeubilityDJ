@@ -29,6 +29,7 @@ pip install -r requirements.txt
 14. 코드의 8번에서 복사한 token에 입력
 15. 코드의 ip와 port 세팅 (사설 IP, 0번에서 진행한 포트로 설정)
 16. 실행
+17. 해당 채널에 봇 초대 @
 
 ### To - Do
 
